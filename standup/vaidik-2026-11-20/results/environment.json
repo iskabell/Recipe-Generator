@@ -1,0 +1,13 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "packages": {
+    "torch": "2.15.0+cpu",
+    "torchvision": "0.29.2+cpu",
+    "ultralytics": "8.4.215",
+    "scikit-learn": "1.8.0",
+    "numpy": "2.5.4",
+    "Pillow": "13.0.0",
+    "opencv-python-headless": "5.1.0.95"
+  }
+}

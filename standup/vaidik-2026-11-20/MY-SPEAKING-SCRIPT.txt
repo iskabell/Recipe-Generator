@@ -1,0 +1,8 @@
+I worked on preparing our ingredient image dataset. It has 5,421 photos across
+43 categories. I checked the images and labels, standardized the image size, and
+merged the preparation scripts and reports into our repository. I also compared
+pretrained ResNet18 with YOLO26 classification, using the same data split and
+training a new classifier head for each. ResNet reached 77.8% test accuracy,
+and YOLO reached 81.6%. These are preliminary results for single-item photos.
+Next, I'd like to test new kitchen photos and help connect confirmed ingredients
+to recipe matching.
