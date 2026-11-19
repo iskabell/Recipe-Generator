@@ -1,0 +1,227 @@
+{
+  "source_commit": "ea0683c81bda3b00d336f6eaae6d03dff21233c8",
+  "seed": 42,
+  "device": "cpu",
+  "quick_mode": false,
+  "hyperparameters": {
+    "batch_size": 32,
+    "dev_fraction": 0.15,
+    "epochs_cnn": 8,
+    "epochs_resnet": 8,
+    "optimizer": "AdamW",
+    "weight_decay": 0.0001
+  },
+  "split_sizes": {
+    "train": 2265,
+    "dev": 375,
+    "test": 2485
+  },
+  "models": {
+    "small_cnn": {
+      "best_epoch": 8,
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 2.7656460630446342,
+          "dev_accuracy": 0.37866666666666665,
+          "dev_macro_f1": 0.09381354455367796
+        },
+        {
+          "epoch": 2,
+          "train_loss": 2.260691910863712,
+          "dev_accuracy": 0.416,
+          "dev_macro_f1": 0.14260799704336607
+        },
+        {
+          "epoch": 3,
+          "train_loss": 1.993206438534044,
+          "dev_accuracy": 0.48,
+          "dev_macro_f1": 0.21275595906284542
+        },
+        {
+          "epoch": 4,
+          "train_loss": 1.7847722847203809,
+          "dev_accuracy": 0.52,
+          "dev_macro_f1": 0.25631452481239503
+        },
+        {
+          "epoch": 5,
+          "train_loss": 1.6217206741800372,
+          "dev_accuracy": 0.5093333333333333,
+          "dev_macro_f1": 0.31380165250169423
+        },
+        {
+          "epoch": 6,
+          "train_loss": 1.491120302808732,
+          "dev_accuracy": 0.632,
+          "dev_macro_f1": 0.3816400916236597
+        },
+        {
+          "epoch": 7,
+          "train_loss": 1.4100090721585103,
+          "dev_accuracy": 0.5733333333333334,
+          "dev_macro_f1": 0.3379967109447274
+        },
+        {
+          "epoch": 8,
+          "train_loss": 1.303211306104597,
+          "dev_accuracy": 0.672,
+          "dev_macro_f1": 0.4402672163894985
+        }
+      ],
+      "test": {
+        "top1": 0.5400402414486921,
+        "top5": 0.8732394366197183,
+        "macro_f1": 0.3126874568916611,
+        "per_class_recall": {
+          "Apple": 0.822463768115942,
+          "Avocado": 0.125,
+          "Banana": 0.11363636363636363,
+          "Kiwi": 0.2222222222222222,
+          "Lemon": 0.6585365853658537,
+          "Lime": 0.16666666666666666,
+          "Mango": 0.0,
+          "Melon": 0.46405228758169936,
+          "Nectarine": 0.0,
+          "Orange": 0.7142857142857143,
+          "Papaya": 0.0,
+          "Passion-Fruit": 0.0,
+          "Peach": 0.0,
+          "Pear": 0.46296296296296297,
+          "Pineapple": 0.44,
+          "Plum": 0.0,
+          "Pomegranate": 0.0,
+          "Red-Grapefruit": 0.17647058823529413,
+          "Satsumas": 0.058823529411764705,
+          "Juice": 0.9771689497716894,
+          "Milk": 0.8170731707317073,
+          "Oatghurt": 0.0,
+          "Oat-Milk": 0.5483870967741935,
+          "Sour-Cream": 0.2682926829268293,
+          "Sour-Milk": 0.21052631578947367,
+          "Soyghurt": 0.48936170212765956,
+          "Soy-Milk": 0.7758620689655172,
+          "Yoghurt": 0.8953488372093024,
+          "Asparagus": 0.0,
+          "Aubergine": 0.18181818181818182,
+          "Cabbage": 0.0,
+          "Carrots": 0.5,
+          "Cucumber": 0.5925925925925926,
+          "Garlic": 0.0,
+          "Ginger": 0.0,
+          "Leek": 0.0,
+          "Mushroom": 0.0,
+          "Onion": 0.4864864864864865,
+          "Pepper": 0.7727272727272727,
+          "Potato": 0.44285714285714284,
+          "Red-Beet": 0.23529411764705882,
+          "Tomato": 0.87,
+          "Zucchini": 0.4482758620689655
+        }
+      }
+    },
+    "resnet18_frozen": {
+      "best_epoch": 7,
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 2.411320614814758,
+          "dev_accuracy": 0.6533333333333333,
+          "dev_macro_f1": 0.41466616129131745
+        },
+        {
+          "epoch": 2,
+          "train_loss": 1.2051855796483442,
+          "dev_accuracy": 0.8106666666666666,
+          "dev_macro_f1": 0.6671271900355034
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.7994620351338755,
+          "dev_accuracy": 0.84,
+          "dev_macro_f1": 0.7421607541768455
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.5880309791228103,
+          "dev_accuracy": 0.88,
+          "dev_macro_f1": 0.802096031657308
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.4725955925766732,
+          "dev_accuracy": 0.888,
+          "dev_macro_f1": 0.8101230501383556
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.3955128911446788,
+          "dev_accuracy": 0.9146666666666666,
+          "dev_macro_f1": 0.8509074422299889
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.34528380946870935,
+          "dev_accuracy": 0.9146666666666666,
+          "dev_macro_f1": 0.8778472455175182
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.2999098482642479,
+          "dev_accuracy": 0.9226666666666666,
+          "dev_macro_f1": 0.875433198052897
+        }
+      ],
+      "test": {
+        "top1": 0.7577464788732394,
+        "top5": 0.9613682092555332,
+        "macro_f1": 0.690372075831622,
+        "per_class_recall": {
+          "Apple": 0.7789855072463768,
+          "Avocado": 0.5,
+          "Banana": 0.9318181818181818,
+          "Kiwi": 0.7777777777777778,
+          "Lemon": 0.2682926829268293,
+          "Lime": 0.23333333333333334,
+          "Mango": 0.2903225806451613,
+          "Melon": 0.9019607843137255,
+          "Nectarine": 0.6,
+          "Orange": 0.17857142857142858,
+          "Papaya": 0.7142857142857143,
+          "Passion-Fruit": 0.5185185185185185,
+          "Peach": 0.75,
+          "Pear": 0.6851851851851852,
+          "Pineapple": 1.0,
+          "Plum": 0.5909090909090909,
+          "Pomegranate": 0.36,
+          "Red-Grapefruit": 0.4411764705882353,
+          "Satsumas": 0.8823529411764706,
+          "Juice": 1.0,
+          "Milk": 0.8963414634146342,
+          "Oatghurt": 0.8666666666666667,
+          "Oat-Milk": 0.4838709677419355,
+          "Sour-Cream": 0.24390243902439024,
+          "Sour-Milk": 0.2631578947368421,
+          "Soyghurt": 0.851063829787234,
+          "Soy-Milk": 0.6896551724137931,
+          "Yoghurt": 0.7732558139534884,
+          "Asparagus": 0.8571428571428571,
+          "Aubergine": 0.9090909090909091,
+          "Cabbage": 0.5789473684210527,
+          "Carrots": 0.8571428571428571,
+          "Cucumber": 0.6296296296296297,
+          "Garlic": 0.68,
+          "Ginger": 0.2,
+          "Leek": 0.8571428571428571,
+          "Mushroom": 0.8205128205128205,
+          "Onion": 0.6216216216216216,
+          "Pepper": 0.990909090909091,
+          "Potato": 0.7857142857142857,
+          "Red-Beet": 0.9411764705882353,
+          "Tomato": 0.96,
+          "Zucchini": 0.8275862068965517
+        }
+      }
+    }
+  }
+}
